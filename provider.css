@@ -1,0 +1,338 @@
+:root{
+    --color-button: #10b981;
+    --color-primary-dark: #2e7d32;
+    --color-background: #fff;
+    --color-background-light: #E9F8E8;
+    --button-hover:#073324;
+    --color-text: #7D6E6E;
+    --color-text-black:#000;
+    --border-radius-lg: 15px;
+    --box-shadow-lg: 0 3px 10px rgba(0, 0, 0, 0.596);
+    --transition-default: all 0.8s ease;
+    
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: robbot;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-background);
+}
+header{
+    display: flex;
+    align-items: center;
+
+}
+
+.container-header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-background-light);
+
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.imag-logo img{
+        margin-left: 20px;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;  
+}
+.text-logo span:first-letter {
+    color: var(--color-button);
+}
+
+.text-logo { 
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.text-logo span {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+
+.container-user{ 
+    display: flex;
+    align-items: center;
+     justify-content: end;
+     gap: 10px;
+     margin-right: 10px;
+}
+
+.image-user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; 
+   
+}
+
+.title-service h1{
+    color: var(--color-secondary);
+
+}
+.username p{
+    color: var(--color-text);
+    font-size: 10px;
+}
+
+/*-------------------------------------start service section-----------------------------------------------------------------------*/
+section{
+  height: 580px; 
+}
+
+.service-container{
+    position: relative;
+    top: 80px;
+    left: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card{
+    box-shadow: var(--box-shadow-lg);
+    width: 440px;
+    height: 200px;
+    background-color: var(--color-background-light);
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius-lg);
+}
+
+.service-image img{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.service-details h3{
+    margin:13px;
+    color: var(--color-text-black);
+    text-align: center;
+}
+.service-details p{
+    width: 280px;
+    font-size: 0.83rem;
+    color: var(--color-text);
+    padding: 5px;
+
+}
+.end-of-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.price-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.price-service span {
+    font-size: 0.80rem;
+}
+
+
+.service-card button {
+    background-color: var(--color-button);
+    color: var(--color-background);
+    border: none;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    transition: var(--transition-default);
+    width:95px;
+    height: 50px;
+}
+.service-card button:hover {
+    background-color: var(--color-primary-dark);
+    transform: scale(1.05);
+}
+/*------------------------------------top services---------------------------------------------------------------*/
+
+.continer-top-services{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #E9F8E8;
+    padding: 40px;
+    
+}
+.top-service-card{
+    border: var(--color-button) solid;
+    border-radius: var(--border-radius-lg);
+    background-color: var(--color-background);
+}
+
+.container-card{
+    gap: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-top-ser img {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    object-fit: cover;
+}
+.text-top-ser h4{
+    font-size: 13px;
+    margin: 5px;
+}
+.text-top-ser p{
+    line-height: 16px;
+    font-size: 10px;
+    color: var(--color-text-light);
+}
+.experience{
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 2px;
+}
+.service-rate{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 13px;
+
+}
+.click-btn{
+background-color: var(--color-button);
+color: var(--color-background);
+border: none;
+height: 40px;
+width: 80%;
+margin-left: 10%;
+border-radius: var(--border-radius-lg);
+cursor: pointer;
+transition:  var(--transition-default);
+margin-bottom: 10px;
+}
+
+.click-btn:hover{
+    transform: scale(1.08);
+    transition: var(--transition-default);
+    background-color: var(--color-primary-dark);
+}
+
+
+
+
+
+
+
+
+/*nots
+
+@media (max-width: 425px) {
+    section{
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .container-logo{
+        margin-left: 0;
+    }
+    .imag-logo img{
+        width: 55px;
+        height: 55px;
+    }
+    .text-logo{
+        font-size: 14px;
+    }
+    .title-service{
+        
+        margin-left:5px ;
+        font-size: 9px;
+
+    }
+    .service-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+    }
+   
+    .image-user img{
+        width: 35px;
+        height: 35px;
+    }
+    .username{
+        font-size: 12px;
+    }
+
+   
+    .service-card{
+        width: 80%;
+
+    }
+    .service-image img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+    
+    .service-details p{
+        padding: 5px;
+        width: 90%;
+
+    }
+    .service-details h3{
+        font-size: 16px;
+        width: 80%;
+    }
+   
+    .continer-top-services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1300px;
+        width: 512px;
+    }
+    .top-service-card{
+         width: 320px;
+         height: 300px;
+    }
+    .service-rate{
+      display: flex;
+      justify-content: center;
+    }
+
+}
+*/
+
